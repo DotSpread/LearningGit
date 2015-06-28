@@ -6,7 +6,7 @@
  */
 $checkForGreetingFilter = function() {
     if (isset($_GET['hello'])) {
-        echo "<h1>Hello {$_GET['hello']}!</h1>";
+        echo "<h1>Howdy, {$_GET['hello']}!</h1>";
         die();
     }
 };
