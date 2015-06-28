@@ -6,7 +6,8 @@
  */
 $checkForGreetingFilter = function() {
     if (isset($_GET['hello'])) {
-        wp_die("<h1>Hello {$_GET['hello']}!</h1>");
+        echo "<h1>Hello {$_GET['hello']}!</h1>";
+        die();
     }
 };
 add_filter('wp_loaded', $checkForGreetingFilter);
